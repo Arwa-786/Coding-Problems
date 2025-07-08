@@ -2,8 +2,10 @@
 void bubbleSort(int arr[], int n)
 {
     int i, j, temp;
+    // i goes for n-1 times for swapping all the elements and last element is already in place so till n-1 and not n
     for (i = 0; i < n - 1; i++)
     {
+        // if it is larger than uts next, swap! j and j+1 hence j traverses till n-1-i, keeps reducing the traversal
         for (j = 0; j < n - i - 1; j++)
         {
             if (arr[j] > arr[j + 1])

@@ -1,7 +1,9 @@
 #include <stdio.h>
+// selection sort O(n^2) runtime
 void selectionSort(int arr[], int n)
 {
     int i, j, min_idx, temp;
+    // going from 1st element to the second last element because the last element will by default be the largest one
     for (int i = 0; i <= n - 1; i++)
     {
         min_idx = i;
